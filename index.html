@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sukesh Periyasamy • Portfolio</title>
+  <meta name="description" content="Portfolio of Sukesh Periyasamy – Healthcare technology enthusiast, medical device software developer, and AI/ML in diagnostics." />
+  <meta property="og:title" content="Sukesh Periyasamy • Portfolio" />
+  <meta property="og:description" content="Healthcare Tech & Innovation • Medical Device Software • AI/ML Diagnostics" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sukeshiitj.me" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230ea5e9'/><text x='50' y='58' font-size='64' text-anchor='middle' fill='white' font-family='Arial, Helvetica, sans-serif'>S</text></svg>">
+  <style>
+    :root{
+      --bg: #0b1020;         /* dark background */
+      --panel: #0f1629;      /* card bg */
+      --text: #e8eefc;       /* body text */
+      --muted:#a9b6d3;       /* muted text */
+      --brand:#0ea5e9;       /* accent */
+      --brand-2:#22d3ee;     /* accent 2 */
+      --ring: rgba(34, 211, 238, .35);
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg, #0b1020 0%, #0a0f1b 100%);color:var(--text);font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, 'Helvetica Neue', Arial, 'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;z-index:50;background:rgba(11,16,32,.6);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:34px;height:34px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg, var(--brand), var(--brand-2));box-shadow:var(--shadow);font-weight:800}
+    .logo span{color:white}
+    .nav a{margin-left:18px;font-weight:600;color:var(--text);opacity:.85}
+    .nav a:hover{opacity:1}
+    .btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg, var(--brand), var(--brand-2));color:#041023;border:none;padding:12px 16px;border-radius:12px;font-weight:700;box-shadow:0 8px 30px var(--ring);transition:.2s transform}
+    .btn:hover{transform:translateY(-2px);text-decoration:none}
+    .btn.ghost{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.14);box-shadow:none}
+
+    /* Hero */
+    .hero{padding:72px 0 36px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+    .badge{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.16);padding:6px 10px;border-radius:999px;color:var(--muted)}
+    h1{font-size:clamp(28px, 4vw, 44px);margin:14px 0 8px}
+    .subtitle{font-size:clamp(15px, 2vw, 18px);color:var(--muted);line-height:1.6}
+    .chipbar{margin-top:16px;display:flex;flex-wrap:wrap;gap:10px}
+    .chip{padding:8px 12px;border-radius:999px;background:#0f1830;border:1px solid rgba(255,255,255,.08);color:#cfe4ff}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:18px;box-shadow:var(--shadow)}
+    .contact{display:grid;gap:10px;color:var(--muted)}
+
+    /* Sections */
+    section{padding:56px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+    section h2{font-size:28px;margin:0 0 16px}
+    .grid{display:grid;gap:18px}
+    .cols-2{grid-template-columns:repeat(2,1fr)}
+    .cols-3{grid-template-columns:repeat(3,1fr)}
+    .item{background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:16px}
+    .item h3{margin:0 0 6px;font-size:18px}
+    .meta{color:var(--muted);font-size:14px}
+    ul.clean{list-style:none;padding:0;margin:10px 0;display:grid;gap:8px}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#081126;border:1px solid rgba(255,255,255,.08);margin:4px 6px 0 0}
+
+    /* Footer */
+    footer{padding:28px 0;color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width: 880px){
+      .hero-grid{grid-template-columns:1fr}
+      .cols-2{grid-template-columns:1fr}
+      .cols-3{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"><span>S</span></div>
+        <strong>Sukesh Periyasamy</strong>
+      </div>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#achievements">Awards</a>
+        <a href="#contact" class="btn ghost" style="margin-left:16px">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge" aria-label="Location & Contact">
+          <span>📍 Tamil Nadu</span>
+          <span>•</span>
+          <a href="tel:+919943969595" aria-label="Call">📞 99439 69595</a>
+          <span>•</span>
+          <a href="mailto:sukeshperiyasamy@gmail.com" aria-label="Send Email">✉️ Email</a>
+        </div>
+        <h1>Healthcare Tech & Medical Device Software • AI/ML in Diagnostics</h1>
+        <p class="subtitle">I’m Sukesh, an M.Tech student at IIT Jodhpur passionate about building reliable, human‑centered technology for healthcare — from embedded medical devices to data‑driven software and rapid diagnostics.</p>
+        <div class="chipbar" role="list" aria-label="Focus areas">
+          <span class="chip">Medical Device Electronics</span>
+          <span class="chip">Medical Software</span>
+          <span class="chip">AI/ML</span>
+          <span class="chip">Healthcare Innovation</span>
+        </div>
+        <div style="margin-top:18px; display:flex; gap:12px; flex-wrap:wrap">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn ghost" href="#skills">View Skills</a>
+        </div>
+      </div>
+      <aside class="card">
+        <h3 style="margin:0 0 8px">Profiles</h3>
+        <p class="meta" style="margin-top:0">Find me around the web</p>
+        <ul class="clean">
+          <li>🔗 GitHub: <a href="https://github.com/sukeshperiyasamy" target="_blank" rel="noreferrer">@sukeshperiyasamy</a></li>
+          <li>🔗 LinkedIn: <a href="https://www.linkedin.com/in/sukeshperiyasamy" target="_blank" rel="noreferrer">/in/sukeshperiyasamy</a></li>
+          <li>🔗 X/Twitter: <a href="https://x.com/Sukeshperiyasamy" target="_blank" rel="noreferrer">@Sukeshperiyasamy</a></li>
+          <li>🔗 Instagram: <a href="https://instagram.com/Sukeshperiyasamy" target="_blank" rel="noreferrer">@Sukeshperiyasamy</a></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About</h2>
+      <div class="grid cols-2">
+        <div class="item">
+          <p>I bridge software engineering and healthcare. I’ve built web platforms, experimented with sensors, and contributed to product management. My current interests include compact diagnostic devices, clinician‑friendly UI, and privacy‑first data systems.</p>
+          <p>Open to internships, research collaborations, and product roles in digital health, medical devices, and applied AI.</p>
+        </div>
+        <div class="item">
+          <strong>Quick Info</strong>
+          <ul class="clean">
+            <li>📚 M.Tech (Medical Technology), IIT Jodhpur — CGPA 8.20 (2024–present)</li>
+            <li>🎓 MCA, Erode Sengunthar Engineering College — CGPA 7.20 (2022–2024)</li>
+            <li>🎓 B.Sc. IT, Kongu Arts & Science College — CGPA 6.90 (2019–2022)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="grid cols-3">
+        <div class="item">
+          <h3>Technical</h3>
+          <div>
+            <span class="pill">Java</span>
+            <span class="pill">MySQL</span>
+            <span class="pill">Node.js</span>
+            <span class="pill">MongoDB</span>
+            <span class="pill">HTML/CSS</span>
+          </div>
+        </div>
+        <div class="item">
+          <h3>Tools</h3>
+          <div>
+            <span class="pill">GitHub</span>
+            <span class="pill">Postman</span>
+            <span class="pill">AWS S3</span>
+            <span class="pill">AWS EC2</span>
+          </div>
+        </div>
+        <div class="item">
+          <h3>Soft Skills</h3>
+          <div>
+            <span class="pill">Collaboration</span>
+            <span class="pill">Analytical Thinking</span>
+            <span class="pill">Adaptability</span>
+            <span class="pill">Positive Attitude</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="grid cols-2">
+        <article class="item">
+          <h3>TourRx – Travel Healthcare Support Platform</h3>
+          <p class="meta">HTML, CSS, JavaScript • <a href="https://tourrx.com" target="_blank" rel="noreferrer">tourrx.com</a></p>
+          <p>Digital platform to support Indian tourists abroad with teleconsultations, emergency referrals, and cashless treatment. Includes verified doctor network, customizable medical kits, and real‑time location‑based urgent care coordination.</p>
+        </article>
+        <article class="item">
+          <h3>House Rental Booking System</h3>
+          <p class="meta">HTML, CSS, JavaScript, Python (Django), SQLite</p>
+          <p>Helps students find nearby, verified rental houses with real‑time availability and simple booking flows.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="grid">
+        <div class="item">
+          <h3>Part‑time Intern — Product Management</h3>
+          <p class="meta">Jodhpur City Knowledge and Innovation Foundation (JCKIF) • Oct 2024 – Mar 2025</p>
+          <ul class="clean">
+            <li>Managed online arts & crafts catalog, ensured accurate listings and stock.</li>
+            <li>Captured, edited, and uploaded high‑quality product images to improve engagement.</li>
+            <li>Assisted product strategies to improve visibility and sales performance.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>Intern — Software Testing</h3>
+          <p class="meta">Atos Syntel • Oct 2022 – Nov 2022</p>
+          <ul class="clean">
+            <li>Assisted in test automation, management, and documentation in Agile teams.</li>
+            <li>Collaborated cross‑functionally to execute testing processes and ensure quality.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="grid cols-2">
+        <div class="item">
+          <h3>Indian Institute of Technology Jodhpur</h3>
+          <p class="meta">M.Tech in Medical Technology • CGPA 8.20 • 2024 – Present</p>
+        </div>
+        <div class="item">
+          <h3>Erode Sengunthar Engineering College</h3>
+          <p class="meta">Master of Computer Applications • CGPA 7.20 • 2022 – 2024</p>
+        </div>
+        <div class="item">
+          <h3>Kongu Arts and Science College</h3>
+          <p class="meta">B.Sc. Information Technology • CGPA 6.90 • 2019 – 2022 • Bharathiar University</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <div class="container">
+      <h2>Achievements & Activities</h2>
+      <div class="grid cols-2">
+        <div class="item">
+          <h3>Co/Extra‑Curricular</h3>
+          <ul class="clean">
+            <li>Finalist — Smart India Hackathon (2024)</li>
+            <li>2nd — Techno Quest @ Kongu Engineering College</li>
+            <li>1st — State Level Technical Symposium (Marketing)</li>
+            <li>1st — Website Creation (Intra Dept)</li>
+            <li>2nd — Code Fighter (Intra Dept)</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>Sports & Leadership</h3>
+          <ul class="clean">
+            <li>Represented Bharathiar University & Anna University in All India Inter‑University Tournaments (2022, 2024)</li>
+            <li>3rd — Inter‑Collegiate Taekwondo (2022)</li>
+            <li>Represented Tamil Nadu in Senior Nationals Softball (2022, 2023, 2024)</li>
+            <li>Vice Captain / Joint Secretary — Dept. of Physical Education (KASC)</li>
+            <li>Student Joint Secretary — Dept. of CT & IT (KASC)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="grid cols-2">
+        <div class="item">
+          <p>I’m happy to connect for internships, research, or product roles in healthcare technology. The fastest way to reach me is by email.</p>
+          <div class="chipbar">
+            <a class="btn" href="mailto:sukeshperiyasamy@gmail.com?subject=Hello%20Sukesh%20—%20from%20your%20portfolio">Email Me</a>
+            <a class="btn ghost" href="tel:+919943969595">Call</a>
+          </div>
+        </div>
+        <div class="item contact">
+          <div>📍 <strong>Tamil Nadu, India</strong></div>
+          <div>✉️ <a href="mailto:sukeshperiyasamy@gmail.com">sukeshperiyasamy@gmail.com</a></div>
+          <div>📞 <a href="tel:+919943969595">+91 99439 69595</a></div>
+          <div>🔗 <a href="https://github.com/sukeshperiyasamy" target="_blank" rel="noreferrer">GitHub</a> • <a href="https://www.linkedin.com/in/sukeshperiyasamy" target="_blank" rel="noreferrer">LinkedIn</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <small>© <span id="year"></span> Sukesh Periyasamy • Built with HTML & CSS</small>
+      <a class="btn ghost" href="#top" aria-label="Back to top">↑ Back to top</a>
+    </div>
+  </footer>
+
+  <script>
+    // Dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll for same‑page anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href').slice(1);
+        if(!id) return;
+        const el = document.getElementById(id);
+        if(el){
+          e.preventDefault();
+          el.scrollIntoView({behavior:'smooth', block:'start'});
+          history.pushState(null, '', '#' + id);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
